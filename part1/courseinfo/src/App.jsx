@@ -5,29 +5,24 @@ const Header = (props) => {
 const Content = (props) => {
   return (
     <div>
-      <p>
-        {props.parts[0].name} {props.parts[0].exercises}
-      </p>
-      <p>
-        {props.parts[1].name} {props.parts[1].exercises}
-      </p>
-      <p>
-        {props.parts[2].name} {props.parts[2].exercises}
-      </p>
+      {props.parts.map((part) => (
+        <p key={part.name}>
+          {part.name} {part.exercises}
+        </p>
+      ))}
     </div>
   )
 }
 
+
 const Total = (props) => {
-  return (
-    <p>
-      Number of exercises{' '}
-      {props.parts[0].exercises +
-        props.parts[1].exercises +
-        props.parts[2].exercises}
-    </p>
-  )
+  const total = props.parts
+    .map(part => part.exercises)
+    .reduce((sum, num) => sum + num, 0)
+
+  return <p>Number of exercises {total}</p>
 }
+
 
 const App = () => {
   const course = 'Half Stack application development'

@@ -1,0 +1,1 @@
+Chrome浏览器中添加React开发者工具扩展, 浏览器F12 console控制台中新增Components标签页，可以直接检查各个组件在当前页面上的布局信息。 

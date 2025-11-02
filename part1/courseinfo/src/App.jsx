@@ -51,6 +51,8 @@ const App = () => {
     setTotal(left + updatedRight);
   };
 
+  // debugger // 手动断点
+
   return (
     <div>
       {left}

@@ -3,13 +3,13 @@ import App from './App'
 
 const notes = [
   {
-    id: 1,
-    content: 'HTML is easy',
+    id: 2,
+    content: 'Browser can execute only JavaScript',
     important: true
   },
   {
-    id: 2,
-    content: 'Browser can execute only JavaScript',
+    id: 1,
+    content: 'HTML is easy',
     important: false
   },
   {
